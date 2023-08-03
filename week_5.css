@@ -1,5 +1,15 @@
-nav {
-    background-color: rgb(200, 200, 200);
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pangolin', cursive;
+}
+
+/* Navbar */
+#navBar {
     height: 8vh;
     display: flex;
     justify-content: space-between;
@@ -7,8 +17,51 @@ nav {
     padding: 10px;
 }
 
-#searchBar {
-    width: 30vw;
+#navLeft {
+    display: flex;
+    align-items: center;
+}
+
+#searchContainer {
     margin-left: 15px;
+}
+
+#searchBar {
+    width: 34vw;
     border-radius: 15px;
+    padding-left: 1vw;
+}
+
+#siteLogo {
+    height: 8vh;
+    width: auto;
+}
+
+#navMiddle > a {
+    margin-left: 15px;
+}
+
+#cartLink {
+    margin-right: 5px;
+}
+
+/* Colors */
+.red {
+    background-color: rgb(255, 179, 186);
+}
+
+.orange {
+    background-color: rgb(255, 223, 186);
+}
+
+.yellow {
+    background-color: rgb(255, 255, 186);
+}
+
+.green {
+    background-color: rgb(186, 255, 201);
+}
+
+.blue {
+    background-color: rgb(196, 225, 255);
 }
