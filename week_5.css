@@ -1,11 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto&display=swap');
 
+/* General */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Pangolin', cursive;
+}
+
+p {
+    margin: 0;
+}
+
+/* Colors */
+.red {
+    background-color: rgb(255, 179, 186);
+}
+
+.orange {
+    background-color: rgb(255, 223, 186);
+}
+
+.yellow {
+    background-color: rgb(255, 255, 186);
+}
+
+.green {
+    background-color: rgb(186, 255, 201);
+}
+
+.blue {
+    background-color: rgb(196, 225, 255);
 }
 
 /* Navbar */
@@ -45,38 +71,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 5px;
 }
 
-/* Colors */
-.red {
-    background-color: rgb(255, 179, 186);
-}
-
-.orange {
-    background-color: rgb(255, 223, 186);
-}
-
-.yellow {
-    background-color: rgb(255, 255, 186);
-}
-
-.green {
-    background-color: rgb(186, 255, 201);
-}
-
-.blue {
-    background-color: rgb(196, 225, 255);
-}
-
-div.row > div {
-    border: 2px solid black;
-}
-
-.concertRow {
-    margin-top: 25px;
-}
-
 /* Concert List */
 .concertList {
     max-width: 800px;
+    margin-bottom: 25px;
 }
 
 .concertImgCol {
@@ -91,8 +89,17 @@ div.row > div {
 }
 
 .concertImg {
-    width: 90%;
+    width: 85%;
     height: auto;
+    max-height: 190px;
     max-width: 400px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+}
+
+/* .concertRow > div {
+    border: 2px solid black;
+} */
+
+.concertRow {
+    margin-top: 25px;
 }
