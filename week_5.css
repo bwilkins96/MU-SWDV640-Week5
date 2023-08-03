@@ -71,6 +71,14 @@ p {
     margin-right: 5px;
 }
 
+.hamburger {
+    display: none;
+}
+
+#altSearch {
+    display: none;
+}
+
 /* Concert List */
 .concertList {
     max-width: 800px;
@@ -96,10 +104,43 @@ p {
     /* border: 2px solid red; */
 }
 
+.concertRow {
+    margin-top: 25px;
+}
+
 /* .concertRow > div {
     border: 2px solid black;
 } */
 
-.concertRow {
-    margin-top: 25px;
+@media screen and (max-width: 950px) {
+    .hamburger {
+        display: block;
+    }
+
+    #browseLink, #ticketsLink, #cartLink, #logInLink {
+        display: none;
+    }
+
+    #searchBar {
+        width: 50vw;
+    }
+} 
+
+@media screen and (max-width: 650px) {
+    #searchContainer {
+        display: None;
+    }
+
+    #altSearch {
+        display: block;
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #altSearchBar {
+        width: 85vw;
+        border-radius: 15px;
+        padding-left: 2vw;
+    }
 }

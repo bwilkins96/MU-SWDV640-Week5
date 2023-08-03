@@ -25,18 +25,37 @@
             </div>
 
             <div id="navMiddle">
-                <a href="#">Browse Concerts</a>
-                <a href="#">My Tickets</a>
+                <a href="#" id="browseLink">Browse Concerts</a>
+                <a href="#" id="ticketsLink">My Tickets</a>
             </div>
 
             <div id="navRight">
                 <a href="#" id="cartLink"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
-                <a href="#">Log in / Sign up</a>
+                <a href="#" id="logInLink">Log in / Sign up</a>
+
+                <!-- Tablet and mobile hamburger menu -->
+                <div class="dropdown hamburger">
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Browse Concerts</a></li>
+                        <li><a href="#">My Tickets</a></li>
+                        <li><a href="#">My Cart</a></li>
+                        <li><a href="#">Log in / Sign up</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <main>
-            <!-- Concert List -->
+             <!-- Alternative search bar for mobile -->
+             <div id="altSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="altSearchBar" placeholder="search for concerts...">
+            </div>
+
+            <!-- Concert list -->
             <div class="container concertList">
                 
                 <div class="row concertRow">
@@ -85,7 +104,7 @@
         </main>
 
 
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
 </html>
 
