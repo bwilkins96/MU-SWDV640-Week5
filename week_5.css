@@ -1,0 +1,14 @@
+nav {
+    background-color: rgb(200, 200, 200);
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#searchBar {
+    width: 30vw;
+    margin-left: 15px;
+    border-radius: 15px;
+}
